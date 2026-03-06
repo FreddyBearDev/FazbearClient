@@ -2,7 +2,6 @@
 #include "core/gamemanager.h"
 
 #include <QGridLayout>
-#include <QPushButton>
 #include <QLabel>
 #include <QVBoxLayout>
 #include <QPixmap>
@@ -10,15 +9,18 @@
 GamesPage::GamesPage(QWidget *parent)
     : QWidget(parent)
 {
+    loadGames();   // ← IMPORTANTE: esto carga los juegos al abrir la página
 }
 
 void GamesPage::loadGames()
 {
-    GameManager manager;
-
-    QVector<GameInfo> games = manager.loadGames("games");
-
+    // Busca el grid dentro del .ui
     QGridLayout *grid = findChild<QGridLayout*>("gridLayout_games");
+
+    if(!grid)
+        return;
+
+    QVector<GameInfo> games = GameManager::loadGames("games");
 
     int row = 0;
     int col = 0;
@@ -29,9 +31,7 @@ void GamesPage::loadGames()
         QVBoxLayout *layout = new QVBoxLayout(card);
 
         QLabel *icon = new QLabel();
-
-        if(!game.icon.isEmpty())
-            icon->setPixmap(QPixmap(game.icon).scaled(64,64));
+        icon->setPixmap(QPixmap(game.icon).scaled(120,120));
 
         QLabel *name = new QLabel(game.name);
 

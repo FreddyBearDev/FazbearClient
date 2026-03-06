@@ -9,6 +9,7 @@ class GamesPage : public QWidget
 
 public:
     explicit GamesPage(QWidget *parent = nullptr);
+
     void loadGames();
 };
 

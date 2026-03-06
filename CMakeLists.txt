@@ -41,8 +41,14 @@ add_executable(fazbearclient
     src/ui/pages/settingspage.ui
 
     # Core
-    src/core/gamemanager.cpp
-    src/core/gamemanager.h
+src/core/gamemanager.cpp
+src/core/gamemanager.h
+
+src/core/appmanager.cpp
+src/core/appmanager.h
+
+src/core/configmanager.cpp
+src/core/configmanager.h
 
     # Utils
     src/utils/jsonutils.cpp
