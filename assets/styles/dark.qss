@@ -1,0 +1,40 @@
+/* General */
+QMainWindow {
+    background-color: #121212;
+}
+
+/* Sidebar */
+QFrame#sidebar {
+    background-color: #1e1e1e;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: transparent;
+    border: none;
+    padding: 20px;
+}
+
+QPushButton:hover {
+    background-color: #2a2a2a;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}
+
+/* Stacked Area */
+QStackedWidget {
+    background-color: #181818;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    background: #1e1e1e;
+    width: 8px;
+}
+
+QScrollBar::handle:vertical {
+    background: #333;
+    border-radius: 4px;
+}

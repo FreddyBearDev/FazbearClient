@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GamesPage</class>
+ <widget class="QWidget" name="GamesPage">
+  <layout class="QVBoxLayout">
+   <item>
+    <widget class="QLabel">
+     <property name="text">
+      <string>Games Library</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
