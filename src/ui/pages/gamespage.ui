@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>GamesPage</class>
- <widget class="QWidget" name="GamesPage">
-  <layout class="QVBoxLayout">
-   <item>
-    <widget class="QLabel">
-     <property name="text">
-      <string>Games Library</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-   </item>
-  </layout>
- </widget>
- <resources/>
- <connections/>
-</ui>
+<widget class="QWidget" name="GamesPage">
+ <widget class="QWidget" name="pageGames">
+            <layout class="QHBoxLayout" name="horizontalLayout_games">
+             <item>
+              <layout class="QGridLayout" name="gridLayout_games"/>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_selected">
+               <item>
+                <widget class="QLabel" name="lblSelectedImage"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="lblSelectedTitle"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="lblSelectedDescription"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btnLaunchSelected">
+                 <property name="text">
+                  <string>Launch Game</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>

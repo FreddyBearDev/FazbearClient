@@ -20,19 +20,19 @@ MainWindow::MainWindow(QWidget *parent)
     // Video 1
     connect(ui->btnThumb1, &QPushButton::clicked, this, []() {
         QDesktopServices::openUrl(
-            QUrl("https://www.youtube.com/watch?v=c5ExAgZmUw8"));
+            QUrl("https://www.youtube.com/watch?v=cX96IudVW2o"));
     });
 
     // Video 2
     connect(ui->btnThumb2, &QPushButton::clicked, this, []() {
         QDesktopServices::openUrl(
-            QUrl("https://www.youtube.com/watch?v=cX96IudVW2o"));
+            QUrl("https://www.youtube.com/watch?v=gk-aCL6eyGc"));
     });
 
     // Video 3
     connect(ui->btnThumb3, &QPushButton::clicked, this, []() {
         QDesktopServices::openUrl(
-            QUrl("https://www.youtube.com/watch?v=gk-aCL6eyGc"));
+            QUrl("https://www.youtube.com/watch?v=c5ExAgZmUw8"));
     });
 
 }
@@ -56,7 +56,7 @@ void MainWindow::setupPages()
 
     ui->stackedWidget->setCurrentIndex(0);
 
-    gamesPage->loadGames(); // 🔥 ESTA LÍNEA ES CLAVE
+    gamesPage->loadGames();
 }
 
 void MainWindow::setupConnections()

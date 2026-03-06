@@ -193,7 +193,7 @@ QPushButton:checked {
          <item>
           <widget class="QStackedWidget" name="stackedWidget">
            <property name="currentIndex">
-            <number>1</number>
+            <number>0</number>
            </property>
            <widget class="QWidget" name="pageHome">
             <layout class="QHBoxLayout" name="horizontalLayout_home">
@@ -651,33 +651,7 @@ QPushButton:checked {
              </item>
             </layout>
            </widget>
-           <widget class="QWidget" name="pageGames">
-            <layout class="QHBoxLayout" name="horizontalLayout_games">
-             <item>
-              <layout class="QGridLayout" name="gridLayout_games"/>
-             </item>
-             <item>
-              <layout class="QVBoxLayout" name="verticalLayout_selected">
-               <item>
-                <widget class="QLabel" name="lblSelectedImage"/>
-               </item>
-               <item>
-                <widget class="QLabel" name="lblSelectedTitle"/>
-               </item>
-               <item>
-                <widget class="QLabel" name="lblSelectedDescription"/>
-               </item>
-               <item>
-                <widget class="QPushButton" name="btnLaunchSelected">
-                 <property name="text">
-                  <string>Launch Game</string>
-                 </property>
-                </widget>
-               </item>
-              </layout>
-             </item>
-            </layout>
-           </widget>
+           
            <widget class="QWidget" name="pageWiki">
             <layout class="QVBoxLayout" name="verticalLayout_wiki"/>
            </widget>
